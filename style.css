@@ -120,13 +120,19 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
   background-image: url(./icon/smartphone.svg);
 }
 .hero {
   color: var(--white);
-  background-color: var(--background-hero);
+  /*background-color: var(--background-hero);*/
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.6),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(./images/herobackgr.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;

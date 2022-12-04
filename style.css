@@ -11,6 +11,8 @@
   --basement-link: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --button-hover: #188ce8;
+  --networks: #AFB1B8;
+  --networks-back: #FFFFFF1A;
 }
 /*outline: 2px solid tomato;*/
 
@@ -90,19 +92,20 @@ img {
 }
 .contakt-lnk {
   color: var(--text-color);
+  fill: currentColor;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.env {
+  display: inline-block;
+  margin-right: 10px;
+}
 .topline-contakts .cntkts-l:not(:last-child) {
   margin-right: 40px;
 }
-.icon {
-  fill: currentColor;
-}
-
 .nav-lnk:hover,
 .nav-lnk:focus,
 .contakt-lnk:hover,
@@ -113,10 +116,9 @@ img {
 }
 .hero {
   color: var(--white);
-  /*background-color: var(--background-hero);*/
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.6),
-      rgba(47, 48, 58, 0.6)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(./images/herobackgr.jpg);
   background-repeat: no-repeat;
@@ -183,6 +185,15 @@ img {
 .peculiarities-list {
   flex-basis: calc((100% - 90px) / 4);
 }
+.peculiarities-svg {
+  background-color: var(--background-team);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
 .peculiarities h3 {
   font-size: 14px;
   line-height: 1.14;
@@ -243,6 +254,27 @@ img {
 .team-ulist {
   display: flex;
 }
+.networks {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  fill: var(--networks)
+}
+.networks:hover,
+.networks:focus {
+  background-color: var(--accent-color);
+  fill: var(--white)
+}
+.social-networks {
+  display: flex;
+  padding-left: 32px;
+}
+.social-networks li + li,
+.social-networks-footer li+li {
+  margin-left: 10px;
+}
 .team-ulist .team-cards + .team-cards {
   margin-left: 30px;
 }
@@ -250,64 +282,50 @@ img {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-.social-networks {
+.compani h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.client {
   display: flex;
-  padding-left: 32px;
+  padding-left: 0px;
 }
-.social-networks li + li {
-  margin-left: 10px;
-}
-.instagram {
+.compani-link {
+  color: var(--networks);
+  width: 170px;
+  border: 1px solid var(--networks);
+  border-radius: 4px;
+  padding: 16px 32px;
   display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-image: url(./icon/instagram.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
-.twitter {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-image: url(./icon/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.compani-link:hover,
+.compani-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
-.facebook {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-image: url(./icon/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.client li + li {
+  margin-left: 30px;
 }
-.linkedin {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-image: url(./icon/linkedin.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.compani-svg {
+  fill: currentColor;
 }
-.instagram:hover,
-.instagram:focus {
-  background-image: url(./icon/instagram-w.svg),
-    linear-gradient(var(--accent-color), var(--accent-color));
-}
-
 .basement {
   background-color: var(--background-hero);
   padding-top: 60px;
   padding-bottom: 60px;
+  color: var(--white);
+}
+.basement-content {
+  display: flex;
 }
 .basement p {
   margin-top: 0px;
   margin-bottom: 12px;
-  color: var(--white);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -336,6 +354,27 @@ img {
 address {
   font-style: normal;
 }
+.join {
+  margin-left: 70px;
+}
+.join h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.social-networks-footer {
+  display: flex;
+  padding-left: 0px;
+}
+.social-networks-footer .networks {
+  fill: var(--white);
+  background-color: var(--networks-back);
+}
+.social-networks-footer .networks:hover,
+.social-networks-footer .networks:focus {
+  background-color: var(--accent-color);
+}
+
 
 /*Портфолио*/
 
